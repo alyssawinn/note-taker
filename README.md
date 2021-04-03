@@ -1,7 +1,7 @@
 # Note Taker
 
 ## Description
-  Quickly, easily, and dynamically generate a README file using this command-line application. Follow the prompts to provide all necessary project information and ta-da! you have a high-quality README.
+Create and keep a list of notes to organize your thoughts and keep track of tasks that you need to complete
 
 ## Table of Contents
 * [Installation](#installation)
@@ -12,10 +12,10 @@
 * [Questions](#questions)
 
 ## Installation
-To use this application, you will need to clone the repository found [here](https://github.com/alyssawinn/readme-generator), download Node to your local machine, then install Inquirer using the command 'npm install inquirer' in your terminal. This will add the necessary node_modules folder required for a functional application.
+This app is launched in Heroku. To use it, click [here](http://winn-note-taker.herokuapp.com/).
 
 ## Usage
-Click [here](https://drive.google.com/file/d/1Vh9PjsYMsTWnTifd2JEGFMRaD-YiSbi7/view) to open instructional video on how to follow prompts to generate a high-quality README.
+N/A
   
 
 ## License
