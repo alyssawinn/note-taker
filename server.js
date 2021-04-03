@@ -1,4 +1,3 @@
-//const { getAndRenderNotes, getNotes, renderNoteList } = require('./public/assets/js/index');
 const fs = require('fs');
 const path = require('path');
 const { notes } = require('./db/db');
@@ -14,13 +13,13 @@ app.get('/notes', (req, res) => {
     res.sendFile(path.join(__dirname, './public/notes.html'));
 });
 
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, './public/index.html'));
-});
-
 app.get('/api/notes', (req, res) => {
     let results = notes;
     res.json(results);
+});
+
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, './public/index.html'));
 });
 
 app.post('/api/notes', (req, res) => {
@@ -31,9 +30,10 @@ app.post('/api/notes', (req, res) => {
         path.join(__dirname, './db/db.json'),
         JSON.stringify({ notes }, null, 2)
     );
-    console.log(notes);
     res.json(newNote);
 });
+
+
 
 app.listen(PORT, () => {
     console.log(`API server now on port ${PORT}!`);
